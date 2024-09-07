@@ -1,0 +1,55 @@
+@keyframes threedcube{
+    from{
+
+    }
+    to{
+        transform: rotateZ(180deg) translateX(90px) rotateX(270deg) translateX(-180px) rotateY(180deg);
+    }
+
+}
+
+
+
+.cube{
+    margin: 20% 20% 20% 20%;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    border:1px solid black;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform: rotateX(25deg) rotateY(-25deg);
+    animation: threedcube 1s ease-in-out alternate infinite;
+}
+.face{
+    height:100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s;
+}
+.face1{
+    background-color: blueviolet;
+   
+}
+.face2{
+    background-color: rgb(18, 195, 104);
+    transform: rotateY(90deg) translateX(-50px) translateZ(-50px);
+}
+.face3{
+    background-color: rgb(178, 112, 14);
+    transform: rotateX(90deg) translateZ(50px) translateY(50px);
+}
+.face4{
+    background-color: cadetblue;
+    transform: rotateY(-90deg) translateX(50px) translateZ(-50px);
+}
+.face5{
+    background-color: darkblue;
+    transform: rotateX(90deg) translateY(50px) translateZ(-50px);
+}
+.face6{
+    background-color: chartreuse;
+   transform: translateZ(100px) ;
+}
+
+
